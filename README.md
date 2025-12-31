@@ -7,19 +7,20 @@ Tor ağı üzerinden .onion sitelerini tarayan bir araç. YAML dosyasından hede
 - `targets.yaml` dosyasındaki onion adreslerini sırayla tarıyor
 - Tor proxy üzerinden bağlanıyor (SOCKS5)
 - Her sitenin HTML içeriğini kaydediyor
-- Screenshot alıyor (chromedp ile)
+- Screenshot alıyor
 - Sonuçları `scan_report.log` dosyasına yazıyor
 
 ## Kurulum
 
-Go yüklü olmalı. Tor Browser veya Tor servisi arka planda çalışıyor olmalı (9150 portundan).
-
 ```bash
-cd tor-scraper
+git clone https://github.com/mehmetyasinuzun/Dark-Web-Scraper.git
+cd Dark-Web-Scraper
 go mod tidy
 ```
 
 ## Kullanım
+
+Önce Tor Browser'ı aç ve arka planda çalışır durumda bırak. Sonra:
 
 ```bash
 go run main.go
